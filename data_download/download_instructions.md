@@ -33,3 +33,5 @@ rsync -av user@server:$BSCRATCH/mus_2019_01_29/ /Volumes/Seagate\ Backup\ Plus\ 
 
 rsync -av ~/Downloads/kallisto-0.45.0/test user@server:$BSCRATCH/mus_2019_01_29/test_data/
 
+rsync -av /Users/sgordon/Documents/project_management/marta/Rdh10KO_liver_BAT_RNAseq_SampleID_MV_2019-02-10_more_data.txt sgordon@gpint203:/global/projectb/scratch/sgordon/mus_2019_01_29/kallisto_run/
+
