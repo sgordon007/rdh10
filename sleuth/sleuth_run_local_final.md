@@ -1,26 +1,26 @@
 # General prep of R
 
 #### activate R
-R
+`R`
 
 #### install
-source("http://bioconductor.org/biocLite.R")
+`source("http://bioconductor.org/biocLite.R")
 biocLite("devtools")    # only if devtools not yet installed
 biocLite("pachterlab/sleuth")
-biocLite("cowplot")
+biocLite("cowplot")`
 
 #### activate the library within R
-library('sleuth')
-library('cowplot')
+`library('sleuth')
+library('cowplot')`
 
 # Experiment 1, two variables, 'genotype' and sex.  Run the two sexes independently
 
 ## males
 
 #### load the serialization:
-ttg <- readRDS("ttg.rds")
+`ttg <- readRDS("ttg.rds")`
 
-metadata <- read.table('experiment1_males_matadata_h5.txt', sep='\t', header=TRUE, stringsAsFactors = FALSE)
+`metadata <- read.table('experiment1_males_matadata_h5.txt', sep='\t', header=TRUE, stringsAsFactors = FALSE)`
 
 head(metadata, 5)
 
