@@ -215,6 +215,16 @@ write.csv(sleuth_wt_genotypeWT_results_table_significant, file = "experiment3_fe
 sleuth_wt_genotypeWT_results_table_significant <- dplyr::filter(sleuth_wt_genotypeWT_results_table, pval <= 0.05)
 write.csv(sleuth_wt_genotypeWT_results_table_significant, file = "experiment3_females_Wald_wt_genotypeWT_results_table_Pval_significant05.csv")
 
+### no overlap between DEG sets derived from qval thresholding
+##### Slc7a2: lipid metabolism: http://www.informatics.jax.org/marker/MGI:99828
+##### Slc26a10: lipid metabolism: http://www.informatics.jax.org/marker/MGI:2143920
+
+##### Car3 ENSMUSG00000027559: obesity:  http://uswest.ensembl.org/Mus_musculus/Gene/Phenotype?db=core;g=ENSMUSG00000027559;r=3:14863512-14872523
+http://uswest.ensembl.org/Mus_musculus/Gene/Phenotype?db=core;g=ENSMUSG00000027559;r=3:14863512-14872523
+
+##### nervous system: Madd:  http://uswest.ensembl.org/Mus_musculus/Gene/Phenotype?db=core;g=ENSMUSG00000040687;r=2:91137360-91183837
+
+#### in one of the sets it seemed like there might entrichment for ubiquitin processes.
 
 
 
