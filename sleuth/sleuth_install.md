@@ -1,3 +1,5 @@
+
+On the remote server we installed successfully with conda in an isolated env:
 ## activate environment
 
 source $BSCRATCH/mus_2019_01_29/conda/anaconda2/bin/activate
@@ -8,11 +10,15 @@ source activate sleuth
 
 conda install --channel bioconda r-sleuth
 
+On out local machine, the conda install did not work.
+Instead, we installed with biocLite:
+
 source("http://bioconductor.org/biocLite.R")
 biocLite("devtools")    # only if devtools not yet installed
 biocLite("pachterlab/sleuth")
+biocLite("cowplot")
 
-#### activate the library
+#### activate the library within R
 library('sleuth')
 library('cowplot')
 

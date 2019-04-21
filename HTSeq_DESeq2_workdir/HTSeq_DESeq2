@@ -1,0 +1,8 @@
+# http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html
+
+For HTSeq, I also include the sam=1.3 flag, because HTSeq expects an older version of the sam/bam format, 
+or at least it did last I used it. 
+
+HTSeq would fail on my BBmap bams until I figured that out!
+
+

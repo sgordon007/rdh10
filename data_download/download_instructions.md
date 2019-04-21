@@ -33,5 +33,21 @@ rsync -av user@server:$BSCRATCH/mus_2019_01_29/ /Volumes/Seagate\ Backup\ Plus\ 
 
 rsync -av ~/Downloads/kallisto-0.45.0/test user@server:$BSCRATCH/mus_2019_01_29/test_data/
 
-rsync -av /Users/sgordon/Documents/project_management/marta/Rdh10KO_liver_BAT_RNAseq_SampleID_MV_2019-02-10_more_data.txt sgordon@gpint203:/global/projectb/scratch/sgordon/mus_2019_01_29/kallisto_run/
+rsync -av ~/Documents/project_management/marta/Rdh10KO_liver_BAT_RNAseq_SampleID_MV_2019-02-10_more_data.txt user@server:$BSCRATCH/mus_2019_01_29/kallisto_run/
+
+rsync -av user@server:$BSCRATCH/mus_2019_01_29/kallisto_run/results_download.tar.gz ~/Documents/project_management/marta/
+
+rsync -av user@server:$BSCRATCH/mus_2019_01_29/kallisto_run/ttg.rds ~/Documents/project_management/marta/
+rsync -av user@server:$BSCRATCH/mus_2019_01_29/kallisto_run/ttg.csv ~/Documents/project_management/marta/
+
+
+## download old results
+rsync -av sgordon@gpint203:/global/projectb/scratch/sgordon/marta_mus_musculus/gene_results.tar.gz ~/Documents/project_management/marta/
+rsync -av sgordon@gpint203:/global/projectb/scratch/sgordon/marta_mus_musculus/isoform_results.tar.gz ~/Documents/project_management/marta/
+
+rsync -av /Users/sgordon/Downloads/stringtie-1.3.5.Linux_x86_64.tar.gz sgordon@gpint203:/global/projectb/scratch/sgordon/mus_2019_01_29/hisat_run/
+
+rsync -av sgordon@gpint203:/global/projectb/scratch/sgordon/mus_2019_01_29/hisat_run/stringtie_results.tar.gz /Users/sgordon/Documents/project_management/marta/
+
+
 
