@@ -1,7 +1,7 @@
 Background
 
 This html has info on making heatmap with sleuth live:  
-file:///Users/sgordon/Documents/project_management/marta/sleuth.html
+~/Documents/project_management/marta/sleuth.html
 
 
 
@@ -492,4 +492,6 @@ sleuth_table_gene <- sleuth_results(so, 'reduced:full', 'lrt', show_all = FALSE)
 sleuth_table_gene05 <- dplyr::filter(sleuth_table_gene, qval <= 0.05)
 write.csv(sleuth_table_gene05, file = "experiment3_matadata_h5_LRT_ConditionedOnSex_genotypeWT_results_table_significant05.csv")
 
+
+# try to get TPM from sleuth live:
 
