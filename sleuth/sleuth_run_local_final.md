@@ -274,4 +274,27 @@ http://uswest.ensembl.org/Mus_musculus/Gene/Phenotype?db=core;g=ENSMUSG000000275
 #### in one of the sets it seemed like there might entrichment for ubiquitin processes.
 
 
+# Make table with per sample TPM values
+
+cut -f 1-2 results/JNMV1A_S18/abundance.tsv > index_combined_tpm.tsv
+
+while IFS= read -r var
+do
+    echo "$var" >> combined_abundance_header.tsv
+    cut -f 5 results/"$var"/abundance.tsv > "$var".tpm
+done < "new_sample_list.txt"
+
+# merge the tpm columns from each sample
+paste *.tpm > combined_tpm.tsv
+
+paste index_combined_tpm.tsv combined_tpm.tsv > indexed_merged_tpm.tsv
+
+ 
+# just copying off the individual TPM files to martas HD
+
+while IFS= read -r var
+do
+    cat results/"$var"/abundance.tsv > "$var".abundance.tsv
+done < "new_sample_list.txt"
+
 
