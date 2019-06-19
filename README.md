@@ -1,1 +1,4 @@
-# rdh10
+Stranded fragment libraries were sequenced in replicated fashion over two lanes of a HiSeq4000 Illumina sequencer, generating 100bp paired-end reads.  Illumina paired-end FASTQ sequencing files corresponding to the same sample across lanes were combined and then filtered for common contaminants.  The Illumina reads were then mapped to transcripts derived from the GRCm38.p6 mouse reference assembly from Ensembl (Database version 95.38) using Kallisto (version 0.44.0).  Kallisto sequence mappings were subsequently processed by sleuth (version 0.30.0) to determine differentially expressed genes in respective comparisons using the Wald test and filtering for a qval significance threshold of less than 0.05.
+
+Note: Full set of commands used to produce these results is available in a versioned github repository ( https://github.com/sgordon007/rdh10 )
+
