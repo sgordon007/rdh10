@@ -1,6 +1,6 @@
 ## activate conda
 
-source $BSCRATCH/mus_2019_01_29/conda/anaconda2/bin/activate
+source mus_2019_01_29/conda/anaconda2/bin/activate
 
 # activate conda env
 source activate sleuth
